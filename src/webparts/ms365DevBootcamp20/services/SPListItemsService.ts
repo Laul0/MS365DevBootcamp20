@@ -6,13 +6,13 @@ export default class SPListItemsService implements ISPListItemsService {
     /**
      * Target Site URL to request
      */
-    private _siteUrl: String;
+    private _siteUrl: string;
 
     /**
      * Default constructor
      * @param u SharePoint Site URL to request
      */
-    constructor(u: String) {
+    constructor(u: string) {
         if (null == u || undefined == u || u.trim().length < 5) {
             throw TypeError('URL can not be null or empty.');
         }
@@ -36,7 +36,7 @@ export default class SPListItemsService implements ISPListItemsService {
                 let events: Array<Bootcamp> = new Array;
                 for (let e = 0; e < r.results.length; e++) {
                     try {
-                        events.push(new Bootcamp(r.results[e].Title, new Date(r.results[e].Date)));
+                        events.push(new Bootcamp(r.results[e].Id, r.results[e].Title, new Date(r.results[e].Date)));
                     } catch {
                         console.log('Item with ID: ' + r.results[e].Id + ' can not be added.');
                     }

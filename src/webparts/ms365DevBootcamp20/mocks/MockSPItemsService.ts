@@ -7,9 +7,9 @@ export default class MockSPListItemsService implements ISPListItemsService {
         return new Promise<Array<Bootcamp>>((resolve, reject) => {
             setTimeout(() => {
                 let fakeResults: Array<Bootcamp> = new Array;
-                fakeResults.push(new Bootcamp('Montréal', new Date('2020-11-19T09:00:00.00-05:00')));
-                fakeResults.push(new Bootcamp('Toronto', new Date('2020-11-19T09:00:00.00-05:00')));
-                fakeResults.push(new Bootcamp('Paris', new Date('2020-11-19T09:00:00.00+00:00')));
+                fakeResults.push(new Bootcamp(1, 'Montréal', new Date('2020-11-19T09:00:00.00-05:00')));
+                fakeResults.push(new Bootcamp(2, 'Toronto', new Date('2020-11-19T09:00:00.00-05:00')));
+                fakeResults.push(new Bootcamp(3, 'Paris', new Date('2020-11-19T09:00:00.00+00:00')));
                 resolve(fakeResults);
             }, 500);
         });

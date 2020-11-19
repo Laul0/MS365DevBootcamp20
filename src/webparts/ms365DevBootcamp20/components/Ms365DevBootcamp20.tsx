@@ -16,10 +16,12 @@ export default class Ms365DevBootcamp20 extends React.Component<IMs365DevBootcam
               <p className={styles.subTitle}>Customize SharePoint experiences using Web Parts.</p>
               <p className={styles.description}>{escape(this.props.description)}</p>
               <hr />
-              {this.props.events.map((p: Bootcamp) => {
-                return (<p>{p.city} - {p.date.toLocaleString()}</p>
-                );
-              })}
+              <div className={styles.listEvents}>
+                {this.props.events.map((p: Bootcamp) => {
+                  return (<p key={p.id}>{p.city} - {p.date.toLocaleString()}</p>
+                  );
+                })}
+              </div>
               <hr />
               <a href="https://aka.ms/spfx" className={styles.button}>
                 <span className={styles.label}>Learn more</span>

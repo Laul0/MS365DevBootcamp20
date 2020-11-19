@@ -37,6 +37,10 @@
     @include ms-fontColor-white;
   }
 
+  .listEvents {
+    display: block;
+  }
+
   .button {
     // Our button
     text-decoration: none;

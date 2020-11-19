@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ms-365-dev-bootcamp-20-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ms365DevBootcamp20/Ms365DevBootcamp20WebPart.js",
+          "manifest": "./src/webparts/ms365DevBootcamp20/Ms365DevBootcamp20WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "Ms365DevBootcamp20WebPartStrings": "lib/webparts/ms365DevBootcamp20/loc/{locale}.js"
+  }
+}

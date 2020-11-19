@@ -21,7 +21,8 @@
     "description": { "default": "Composant de démonstration pour la session Trucs et Astuces Microsoft 365 Developer Bootcamp 2020" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "MS365DevBootcamp20"
+      "description": "MS365DevBootcamp20",
+      "listEvents": "Bootcamps"
     }
   }]
 }

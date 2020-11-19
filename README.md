@@ -1,4 +1,4 @@
-# ms-365-dev-bootcamp-20
+# SharePoint Framework - Trucs & Astuces @Microsoft 365 Developer Bootcamp 2020
 
 ## Summary
 
